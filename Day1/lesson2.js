@@ -22,15 +22,15 @@ console.log(sum(23, 50));
 function studentGrade(marks) {
   if (marks >= 90 && marks <= 100) {
     console.log("Grade A");
-  } else if (marks >= 70 && marks < 90) {
+  } else if (marks >= 70 ) {
     console.log("Grade B");
-  } else if (marks >= 50 && marks < 70) {
+  } else if (marks >= 50 ) {
     console.log("Grade C");
-  } else if (marks >= 35 && marks < 50) {
+  } else if (marks >= 35) {
     console.log("Grade D");
   } else {
     console.log("Fail");
   }
 }
 
-studentGrade(30);
+studentGrade(20);
