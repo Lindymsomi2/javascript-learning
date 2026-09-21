@@ -72,14 +72,25 @@ console.log(`There are ${countD} D's`);
 console.log(`There are ${countF} F's`);
 
 //highest mark in the array
-let heighest = 0;
+let highest = 0;
 
 for (let i = 0; i <= marksArray.length - 1; i++) {
   let firstElement = marksArray[i];
 
-  if (firstElement > heighest) {
-    heighest = firstElement;
+  if (firstElement > highest) {
+    highest = firstElement;
   }
-
 }
-console.log(`heighest is ${heighest}`);
+console.log(`highest is ${highest}`);
+
+//lowest mark in the array
+let lowest = highest;
+
+for (let i = 0; i <= marksArray.length - 1; i++) {
+  let firstElement = marksArray[i];
+
+  if (firstElement < lowest) {
+    lowest = firstElement;
+  }
+}
+console.log(`lowest is ${lowest}`);
