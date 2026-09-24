@@ -131,10 +131,12 @@ console.log(`lowest is ${lowest2}`);
 
 const student = {
   name: "Melissa",
+  sum: sum,
   marks: marksArray,
   average: average,
   highest: highest,
   lowest: lowest,
+  subject: "Physical Science",
 };
 
 console.log(student.name);
@@ -183,7 +185,7 @@ function passed(average) {
   }
 }
 
-student.pass = passed(student.average);
+student.passed = passed(student.average);
 
 console.log(student);
 
@@ -194,9 +196,10 @@ const student2 = {
   average: average2,
   highest: highest2,
   lowest: lowest2,
+  subject: "Mathematics",
 };
 student2.grade = studentGrade(student2.average);
-student2.pass = passed(student2.average);
+student2.passed = passed(student2.average);
 console.log(student2);
 
 const reports = {
